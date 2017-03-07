@@ -1,0 +1,21 @@
+
+<style>
+table td a {color:white; text-decoration: none;}
+table td a:hover {color:royalblue;}
+
+ </style>
+
+<div ng-controller="dataCtrl" style="background-color: cornflowerblue; width:250px; text-align:center; border-radius:2px; float:left; ">
+
+
+
+<center>
+<table >
+<tr ng-repeat="x in names"><td style="background-color: skyblue; text-align: center; border-radius: 2px; font-family: calibri; font-size: 20px;"><a ng-href="{{x.category_name}}">{{x.category_name}}</a></td></tr>
+
+</table>
+</center>
+</div>
+
+
+<div ng-view style="float:left;"></div>
